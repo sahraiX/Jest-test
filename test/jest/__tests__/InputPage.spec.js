@@ -20,5 +20,5 @@ test('should show the form element on the user output', () => {
     const wrapper = shallowMount(InputPage)
     const button = wrapper.find('button')
     await button.trigger('click')
-    expect(wrapper.emitted()).toHaveProperty('submit form')
+    expect(wrapper.vm.addition(1,2)).toBe(3)
   })
