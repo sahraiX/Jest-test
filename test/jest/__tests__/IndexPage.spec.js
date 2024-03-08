@@ -10,6 +10,11 @@ describe('IndexPage', () => {
       .toBe('Vue is awesome.')
   })
 
+test('Name Chanannaphat Singkhal 6404101357 available on file',() => {
+  const wrapper = shallowMount(FunctionPage)
+  expect(wrapper.find('form > input').exists("Chanannaphat","Singkhal","6404101357")).toBe(true)
+})
+
   it('check text content to be as defined in variable', () => {
     const wrapper = shallowMount(IndexPage, {
       data () {

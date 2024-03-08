@@ -1,6 +1,11 @@
 import FunctionPage from 'src/pages/IndexPage.vue'
 import { shallowMount } from '@vue/test-utils'
 
+test('Chanannaphat Singkhal 6404101357', () => {
+  const wrapper = shallowMount(FunctionPage)
+  expect(wrapper.find('form > input').exists('Chanannaphat','Singkhal',"6404101357")).toBe(true)
+})
+
 describe('IndexPage', () => {
   it('should render correct contents', () => {
     const wrapper = shallowMount(FunctionPage)
